@@ -1,2 +1,2 @@
 # locadora-de-veiculo
-Praticando OO m Java
+Praticando OO em Java
