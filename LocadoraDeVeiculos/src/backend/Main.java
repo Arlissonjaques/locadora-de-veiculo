@@ -1,12 +1,21 @@
 package backend;
-import frontend.Menu;
+import meio.Interface;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println(Menu.menuPrincipal());
+        int opcao = Interface.retornaOpcaoEscolhidaNosMenus();
+        validaOpcaoEscolhida(opcao);
         
+    }
+
+    static void validaOpcaoEscolhida(int opcao){
+
+        while (opcao < 0 || opcao > 4){
+            System.out.println("Opção invalida! Escolha novamente:");
+            opcao = Interface.retornaOpcaoEscolhidaNosMenus();
+        }
     }
     
 }
